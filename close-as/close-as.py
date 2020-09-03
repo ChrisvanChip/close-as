@@ -17,7 +17,7 @@ class CloseAs:
     @commands.command(aliases=["ohnojinnieclosedaticket"])
     @checks.has_permissions(PermissionLevel.SUPPORTER)
     @checks.thread_only()
-    async def close-as, ctx, user: discord.User, *, after: UserFriendlyTime = None):
+    async def closeas, ctx, user: discord.User, *, after: UserFriendlyTime = None):
         """
         Close the thread on the behalf of another user.
 
