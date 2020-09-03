@@ -100,4 +100,4 @@ class CloseAs:
 
 
 def setup(bot):
-    bot.add_cog(AntiStealClosePlugin(bot))
+    bot.add_cog(CloseAs(bot))
