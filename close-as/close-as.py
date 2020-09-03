@@ -7,17 +7,17 @@ from core.models import PermissionLevel
 from core import checks
 
 
-class AntiStealClosePlugin(commands.Cog):
+class CloseAs:
     """
     Closes a ticket on behalf of someone else.
     """
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=["close-as"])
+    @commands.command(aliases=["ohnojinnieclosedaticket"])
     @checks.has_permissions(PermissionLevel.SUPPORTER)
     @checks.thread_only()
-    async def anti_steal_close(self, ctx, user: discord.User, *, after: UserFriendlyTime = None):
+    async def close-as, ctx, user: discord.User, *, after: UserFriendlyTime = None):
         """
         Close the thread on the behalf of another user.
 
